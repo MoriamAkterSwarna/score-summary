@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:500,700,800"
+      rel="stylesheet" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="card">
+        <!-- left part -->
+        <div class="left-score-section">
+          <div><h2 class="result-h">Your Result</h2></div>
+
+          <div class="score-circle">
+            <span class="percent-score">76</span>
+            <!-- <br /> -->
+            <span class="rest-score">of 100</span>
+          </div>
+          <div><h2 class="great">Great</h2></div>
+          <div>
+            <p class="text-below">
+              You scored higher than 65% of <br />
+              the people who have taken <br />
+              these tests.
+            </p>
+          </div>
+        </div>
+
+        <div class="summary-section">
+          <h3 class="summary">Summary</h3>
+          <div class="progress-reaction">
+            <div class="progress-left">
+              <img src="./assets/images/icon-reaction.svg" alt="" />
+              <span class="label-reaction">Reaction</span>
+            </div>
+
+            <span class="score">80 <span class="scale">/100</span></span>
+          </div>
+          <div class="progress-memory">
+            <div class="progress-left">
+              <img src="./assets/images/icon-memory.svg" alt="" />
+              <span class="label-memory">Memory</span>
+            </div>
+
+            <span class="score">80 <span class="scale">/100</span></span>
+          </div>
+          <div class="progress-verbal">
+            <div class="progress-left">
+              <img src="./assets/images/icon-verbal.svg" alt="" />
+              <span class="label-verbal">Memory</span>
+            </div>
+
+            <span class="score">80 <span class="scale">/100</span></span>
+          </div>
+          <div class="progress-visual">
+            <div class="progress-left">
+              <img src="./assets/images/icon-visual.svg" alt="" />
+              <span class="label-visual">Memory</span>
+            </div>
+
+            <span class="score">80 <span class="scale">/100</span></span>
+          </div>
+
+          <button class="continue-button">Continue</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

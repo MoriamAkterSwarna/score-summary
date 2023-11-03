@@ -1,0 +1,209 @@
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.card {
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin: 8% auto;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  flex-direction: row;
+}
+
+.left-score-section {
+  background: linear-gradient(
+    to left top,
+
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+  );
+  border-radius: 25px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.result-h {
+  color: hsl(241, 100%, 89%);
+  margin: 30px 0;
+}
+.score-circle {
+  height: 60px;
+  width: 60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    0deg,
+    hsla(241, 72%, 46%, 0),
+    hsla(256, 72%, 46%, 1)
+  );
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.percent-score {
+  font-size: 60px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.rest-score {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+}
+.great {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.text-below {
+  margin-bottom: 35px;
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  text-align: center;
+}
+.summary-section {
+  width: 50%;
+}
+.summary {
+  margin-left: 39px;
+}
+.progress-reaction,
+.progress-memory,
+.progress-verbal,
+.progress-visual {
+  background-color: hsl(0, 27%, 94%);
+  padding: 15px 25px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.progress-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.label-reaction {
+  color: hsl(0, 100%, 67%);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.score {
+  color: hsl(224, 30%, 27%);
+}
+.scale {
+  color: hsl(241, 25%, 64%);
+}
+.progress-memory {
+  background-color: hsl(37, 48%, 84%);
+}
+
+.label-memory {
+  color: hsl(39, 100%, 56%);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.progress-verbal {
+  background-color: hsl(166, 39%, 87%);
+}
+
+.label-verbal {
+  color: hsl(166, 100%, 37%);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.progress-visual {
+  background-color: hsl(235, 59%, 89%);
+}
+
+.label-visual {
+  color: hsl(234, 85%, 45%);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.continue-button {
+  background-color: hsl(224, 30%, 27%);
+  padding: 15px 25px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 30px;
+  border: 0;
+  text-align: center;
+  font-size: 18px;
+  color: hsl(221, 100%, 96%);
+}
+.continue-button:hover {
+  background: linear-gradient(
+    to left top,
+
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+  );
+  cursor: pointer;
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  /* Adjust the card width and margin */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .left-score-section {
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  /* Adjust the score circle size and position */
+  .score-circle {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  /* Adjust the font sizes */
+  .percent-score {
+    font-size: 40px;
+  }
+
+  .rest-score,
+  .result-h,
+  .text-below {
+    font-size: 16px;
+  }
+
+  .great {
+    font-size: 24px;
+  }
+  .summary-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .progress-reaction,
+  .progress-memory,
+  .progress-verbal,
+  .progress-visual {
+    width: 70%;
+  }
+}
